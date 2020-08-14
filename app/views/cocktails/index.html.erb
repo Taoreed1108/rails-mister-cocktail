@@ -1,0 +1,18 @@
+<div">
+  <h1>Tiwong Restaurant!!!!!!!!!</h1>
+
+  <h2>Social distancing in-place</h2>
+
+<ul>
+  <% @cocktails.each do |cocktail| %>
+  <li><%= link_to cocktail.name, cocktail_path(cocktail) %></li>
+  <% end %>
+</ul>
+
+<%= link_to 'Add a new cocktail', new_cocktail_path  %>
+
+</div>
+
+
+
+
